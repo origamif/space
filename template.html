@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <base href="{{base}}">
+  <title>{{title}}</title>
+  <meta name="description" content="{{description}}">
+  <link rel="canonical" href="{{canonical_url}}">
+  <meta property="og:title" content="{{title}}">
+  <meta property="og:description" content="{{description}}">
+  <meta property="og:type" content="{{og_type}}">
+  <meta property="og:image" content="{{og_image}}">
+  <meta property="og:url" content="{{canonical_url}}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{title}}">
+  <meta name="twitter:description" content="{{description}}">
+  <meta name="twitter:image" content="{{og_image}}">
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◉</text></svg>">
+  <link rel="alternate" type="application/atom+xml" title="Space" href="feed.xml">
+  {{json_ld}}
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="site-title"><a href=".">Space</a></div>
+      <nav class="site-nav">
+        <a href=".">Writing</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-content">
+    {{body}}
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span class="footer-copy">&copy; {{year}} Ori</span>
+      <div class="footer-links">
+        <a href="https://github.com/origamif/space">Source</a>
+        <a href="feed.xml">Feed</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
